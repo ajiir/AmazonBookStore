@@ -1,32 +1,35 @@
 {
   "expo": {
     "name": "AmazonBookStore",
+    "description": "Амазон номын дэлгүүрийн апп.",
     "slug": "AmazonBookStore",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/images/logo-square.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/images/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "mn.amazon.bookstore",
+      "buildNumber": "1.0.1"
     },
+
     "android": {
+      "googleServicesFile": "./google-services.json",
+      "versionCode": 2,
+      "package": "mn.amazon.bookstore",
+      "useNextNotificationsApi": true,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+        "foregroundImage": "./assets/images/logo-square.png",
+        "backgroundColor": "#ffffff"
       }
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
     }
   }
 }
